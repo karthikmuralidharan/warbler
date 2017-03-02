@@ -16,9 +16,9 @@ env:
   - BUNDLER_VERSION="~> 1.10"
 matrix:
   include:
-    - rvm: jruby-1.7.24
+    - rvm: jruby-1.7.25
       env: JRUBY_OPTS="--1.8" BUNDLER_VERSION="~> 1.7.9" RAKE_VERSION="~> 10.2.2"
-    - rvm: jruby-1.7.24
+    - rvm: jruby-1.7.25
       env: JRUBY_OPTS="--1.9" BUNDLER_VERSION="~> 1.11.2" RAKE_VERSION="~> 10.3.2"
     - rvm: jruby-1.7.8
       env: JRUBY_OPTS="--1.8" BUNDLER_VERSION="~> 1.8.9" RAKE_VERSION="~> 10.1.1"
@@ -30,7 +30,7 @@ matrix:
       env: BUNDLER_VERSION="~> 1.7.9" RAKE_VERSION="~> 10.5.0"
     - rvm: 1.9.3
       env: BUNDLER_VERSION="~> 1.8.9" RAKE_VERSION="~> 10.2.2"
-    - rvm: jruby-1.7.24
+    - rvm: jruby-1.7.25
       env: MAVEN_OPTS="-XX:MaxPermSize=128m"
       script: mvn clean verify
   allow_failures:
